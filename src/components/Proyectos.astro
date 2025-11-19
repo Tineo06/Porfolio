@@ -1,0 +1,83 @@
+---
+import HTML from "../components/HTML.astro";
+import JS from "../components/JS.astro";
+import Tailwind from "../components/Tailwind.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GitHub from "../components/GitHub.astro";
+import IconoAstro from "../components/IconoAstro.astro";
+const TAGS = {
+    HTML: {
+        nombre: "HTML",
+        class: "bg-orange-500 text-white",
+        icon: HTML,
+    },
+    TAILWIND: {
+        nombre: "Tailwind CSS",
+        class: "bg-white text-[#67bcf3]",
+        icon: Tailwind,
+    },
+
+    JAVASCRIPT: {
+        nombre: "JavaScript",
+        class: "bg-[#eddc68] text-black",
+        icon: JS,
+    },
+    ASTRO: {
+        nombre: "Astro",
+        class: "bg-white text-black",
+        icon: IconoAstro,
+    },
+};
+
+const PROYECTOS = [
+    {
+        title: "Wordle",
+        descripcion:
+            "Wordle es un juego de lógica y vocabulario en el que debes adivinar una palabra oculta en un número limitado de intentos.",
+        github: "https://github.com/Tineo06/Wordle",
+        image: "/Wordle_logo.png",
+        tags: [TAGS.HTML, TAGS.JAVASCRIPT, TAGS.TAILWIND],
+    },
+    {
+        title: "Criptomonedas App",
+        descripcion:
+            "Aplicación web que muestra información en tiempo real sobre las criptomonedas más populares, incluyendo precios, gráficos.",
+        github: "https://github.com/Tineo06/Crypto",
+        tags: [TAGS.HTML, TAGS.JAVASCRIPT, TAGS.TAILWIND],
+    },
+    {   
+        title: "Porfolio Personal",
+        descripcion:
+            "Mi porfolio personal desarrollado con Astro y Tailwind CSS para mostrar mis proyectos y habilidades como desarrollador web.",
+        tags: [TAGS.ASTRO, TAGS.TAILWIND],
+        github: "https://github.com/Tineo06/Porfolio",  
+    },
+];
+---
+
+{
+    PROYECTOS.map((proyecto) => (
+        <article>
+            <h3 class="text-2xl font-semibold mb-2">{proyecto.title}</h3>
+            <p class="text-lg mb-2">{proyecto.descripcion}</p>
+            <ul class="flex gap-x-4 flex-row">
+                {proyecto.tags.map((tag) => (
+                    <li class="mb-2">
+                        <span
+                            class={`flex gap-x-2 rounded-full text-sm ${tag.class} py-1 px-4 items-center`}
+                        >
+                            <tag.icon class="size-4" />
+                            {tag.nombre}
+                        </span>
+                    </li>
+                ))}
+            </ul>
+            <div class="py-3">
+                <SocialPill href={proyecto.github}>
+                    <GitHub />
+                    GitHub
+                </SocialPill>
+            </div>
+        </article>
+    ))
+}

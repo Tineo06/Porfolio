@@ -1,0 +1,240 @@
+---
+import HTML from "../components/HTML.astro";
+import JS from "../components/JS.astro";
+import Tailwind from "../components/Tailwind.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GITHUB from "../components/GitHub.astro";
+import IconoAstro from "../components/IconoAstro.astro";
+import JAVA from "../components/IconJava.astro";
+import REACT from "../components/React.astro";
+import LARAVEL from "../components/Laravel.astro";
+import CSS from "../components/Css.astro";
+import TYPESCRIPT from "../components/TypeScript.astro";
+import BOOSTRAP from "../components/Boostrap.astro";
+import NODEJS from "../components/Node.astro";
+import PHP from "../components/Php.astro";
+import PYTHON from "../components/Python.astro";
+import MYSQL from "../components/MySql.astro";
+import MONGODB from "../components/Mongo.astro";
+import GIT from "../components/Git.astro";
+import VISUALSTUDIO from "../components/Visual.astro";
+import FIGMA from "../components/Figma.astro";
+import AWS from "../components/Aws.astro";
+import DOCKER from "../components/Docker.astro";
+import VUE from "../components/Vue.astro";
+import NEXT from "../components/Next.astro";    
+
+const TAGS = {
+    HTML: {
+        nombre: "HTML",
+        class: "bg-orange-500 text-white",
+        icono: HTML,
+    },
+    JAVASCRIPT: {
+        nombre: "JavaScript",
+        class: "bg-yellow-400 text-black",
+        icono: JS,
+    },
+    TAILWIND: {
+        nombre: "Tailwind CSS",
+        class: "bg-teal-500 text-white",
+        icono: Tailwind,
+    },
+    ASTRO: {
+        nombre: "Astro",
+        class: "bg-white text-black",
+        icono: IconoAstro,
+    },
+    JAVA: {
+        nombre: "Java",
+        class: "bg-blue-600 text-white",
+        icono: JAVA,
+    },
+    REACT: {
+        nombre: "React",
+        class: "bg-blue-400 text-white",
+        icono: REACT,
+    },
+    LARAVEL: {
+        nombre: "Laravel",
+        class: "bg-red-600 text-white",
+        icono: LARAVEL,
+    },
+    CSS: {
+        nombre: "CSS",
+        class: "bg-blue-300 text-white",
+        icono: CSS,
+    },
+    TYPESCRIPT: {
+        nombre: "TypeScript",
+        class: "bg-blue-500 text-white",
+        icono: TYPESCRIPT,
+    },
+    BOOSTRAP: {
+        nombre: "Bootstrap",
+        class: "bg-purple-600 text-white",
+        icono: BOOSTRAP,
+    },
+    NODEJS: {
+        nombre: "Node.js",
+        class: "bg-green-600 text-white",
+        icono: NODEJS,
+    },
+    PHP: {
+        nombre: "PHP",
+        class: "bg-purple-500 text-white",
+        icono: PHP,
+    },
+    PYTHON: {
+        nombre: "Python",
+        class: "bg-yellow-500 text-black",
+        icono: PYTHON,
+    },
+    MYSQL: {
+        nombre: "MySQL",
+        class: "bg-blue-800 text-white",
+        icono: MYSQL,
+    },
+    MONGODB: {
+        nombre: "MongoDB",
+        class: "bg-green-400 text-white",
+        icono: MONGODB,
+    },
+    GIT: {
+        nombre: "Git",
+        class: "bg-red-400 text-white",
+        icono: GIT,
+    },
+    GITHUB: {
+        nombre: "GitHub",
+        class: "bg-gray-800 text-white",
+        icono: GITHUB,
+    },
+    VISUALSTUDIO: {
+        nombre: "Visual Studio Code",
+        class: "bg-blue-700 text-white",
+        icono: VISUALSTUDIO,
+    },
+    FIGMA: {
+        nombre: "Figma",
+        class: "bg-pink-500 text-white",
+        icono: FIGMA,
+    },
+    AWS: {
+        nombre: "AWS",
+        class: "bg-yellow-600 text-black",
+        icono: AWS,
+    },
+    DOCKER: {
+        nombre: "Docker",
+        class: "bg-blue-500 text-white",
+        icono: DOCKER,
+    },
+    VUE: {
+        nombre: "Vue.js",
+        class: "bg-green-500 text-white",
+        icono: VUE,
+    },
+    NEXT: {
+        nombre: "Next.js",
+        class: "bg-black text-white",
+        icono: NEXT,
+    },
+};
+
+const SOBREMI = [
+    {
+        nombre: "Alejandro Tineo Pérez",
+        descripcion:
+            "Estudio Desarrollo de Aplicaciones Web en U-tad. Me apasiona la programación y el desarrollo web, y siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades. Me considero una persona proactiva, responsable y con muchas ganas de crecer profesionalmente en el mundo del desarrollo web, Estudio las siguientes tecnologías:",
+        tags: [TAGS.HTML, TAGS.JAVASCRIPT, TAGS.TAILWIND, TAGS.ASTRO, TAGS.REACT, TAGS.NODEJS, TAGS.PHP, TAGS.MYSQL, TAGS.GIT, TAGS.GITHUB, TAGS.VISUALSTUDIO, TAGS.FIGMA, TAGS.AWS, TAGS.DOCKER, TAGS.VUE, TAGS.NEXT, TAGS.JAVA, TAGS.LARAVEL, TAGS.CSS, TAGS.TYPESCRIPT, TAGS.BOOSTRAP, TAGS.PYTHON, TAGS.MONGODB],
+    }
+];
+
+const allTags = SOBREMI[0].tags;
+const half = Math.ceil(allTags.length / 2);
+const firstRow = allTags.slice(0, half);
+const secondRow = allTags.slice(half);
+---
+
+<section class="my-10 max-w-full overflow-hidden">
+    <p class="text-lg mb-8">{SOBREMI[0].descripcion}</p>
+
+    <div class="relative flex flex-col gap-6 mask-gradient">
+        
+        <div class="flex overflow-hidden w-full">
+            <div class="flex gap-4 animate-marquee">
+                {firstRow.map((tag) => (
+                    <div class={`flex items-center gap-2 px-4 py-2 rounded-full ${tag.class} whitespace-nowrap`}>
+                        <tag.icono class="size-5" />
+                        <span class="font-medium">{tag.nombre}</span>
+                    </div>
+                ))}
+                {firstRow.map((tag) => (
+                    <div class={`flex items-center gap-2 px-4 py-2 rounded-full ${tag.class} whitespace-nowrap`}>
+                        <tag.icono class="size-5" />
+                        <span class="font-medium">{tag.nombre}</span>
+                    </div>
+                ))}
+            </div>
+        </div>
+
+        <div class="flex overflow-hidden w-full">
+            <div class="flex gap-4 animate-marquee-reverse">
+                {secondRow.map((tag) => (
+                    <div class={`flex items-center gap-2 px-4 py-2 rounded-full ${tag.class} whitespace-nowrap`}>
+                        <tag.icono class="size-5" />
+                        <span class="font-medium">{tag.nombre}</span>
+                    </div>
+                ))}
+                {secondRow.map((tag) => (
+                    <div class={`flex items-center gap-2 px-4 py-2 rounded-full ${tag.class} whitespace-nowrap`}>
+                        <tag.icono class="size-5" />
+                        <span class="font-medium">{tag.nombre}</span>
+                    </div>
+                ))}
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+
+    .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 40s linear infinite;
+    }
+
+    .animate-marquee-reverse {
+        display: flex;
+        width: max-content;
+        animation: marquee 40s linear infinite reverse;
+    }
+
+    .animate-marquee:hover, .animate-marquee-reverse:hover {
+        animation-play-state: paused;
+    }
+
+    .mask-gradient {
+        mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent
+        );
+        -webkit-mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent
+        );
+    }
+</style>

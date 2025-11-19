@@ -1,0 +1,121 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedIn from "../components/LinkedIn.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GitHub from "../components/GitHub.astro";
+import Mail from "../components/Mail.astro";
+import Briefecase from "../components/Briefecase.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Code from "../components/Code.astro";
+import Proyectos from "../components/Proyectos.astro";
+import Book from "../components/Book.astro";
+import SobreMi from "../components/SobreMi.astro";
+import EnviarMail from "../components/EnviarMail.astro";
+---
+
+<Layout
+	title="Porfolio de Alejandro - Desarrollador y Programador Web"
+	description="Contrata a Alejandro"
+>
+	<main>
+		<SectionContainer class="py-36 pb-24">
+			<img
+				class="w-24 h-24 rounded-full mb-4"
+				src="https://avatars.githubusercontent.com/u/9919?s=200&v=4"
+				alt="Foto de perfil de Alejandro"
+			/>
+
+			<div class="flex flex-col">
+				<h1
+					class="text-5xl font-bold flex flex-row gap-x-4 items-center pb-4"
+				>
+					Hola, soy Alejandro
+					<a
+						class="flex justify-center items-center"
+						href="https://www.linkedin.com/in/alejandro-tineo-pérez-721a13333/"
+						target="_blank"
+						rel="noopener"
+						><Badge> Disponible para trabajar </Badge>
+					</a>
+				</h1>
+
+				<h2 class="text-2xl opacity-80 text-wrap">
+					Estudiante en la U-tad. Desarrollador de aplicaciones web,
+					tanto Front-end como Back-end. De Madrid, España 🇪🇸. Con
+					muchas ganas de aprender.
+				</h2>
+
+				<nav class="flex felx-row gap-x-4">
+					<SocialPill
+						href="https://www.linkedin.com/in/alejandro-tineo-pérez-721a13333/"
+					>
+						<LinkedIn />
+						LinkedIn
+					</SocialPill>
+					<SocialPill href="https://github.com/Tineo06">
+						<GitHub />
+						GitHub
+					</SocialPill>
+					<SocialPill href="mailto:alejantipe@gmail.com">
+						<Mail />
+						alejantipe@gmail.com
+					</SocialPill>
+				</nav>
+			</div>
+		</SectionContainer>
+		<SectionContainer id="experiencia">
+			<h2
+				class="flex flex-row mb-5 text-2xl font-semibold items-center gap-x-2"
+			>
+				<Briefecase /> Experiencia Laboral
+			</h2>
+			<Experience />
+		</SectionContainer>
+		<SectionContainer class="py-32" id="proyectos">
+			<h2
+				class="flex flex-row mb-5 text-2xl font-semibold items-center gap-x-2"
+			>
+				<Code /> Proyectos
+			</h2>
+			<Proyectos />
+		</SectionContainer>
+		<SectionContainer class="py-20" id="sobre-mi">
+			<h2
+				class="flex flex-row mb-5 text-2xl font-semibold items-center gap-x-2"
+			>
+				<Book /> Sobre Mí
+			</h2>
+			<SobreMi />
+		</SectionContainer>
+		<SectionContainer class="py-20" id="contacto">
+			<h2
+				class="flex flex-row mb-5 text-2xl font-semibold items-center gap-x-2"
+			>
+				<Mail /> Contacto
+			</h2>
+			<p class="text-lg mb-8">
+				¿Quieres ponerte en contacto conmigo? ¡Estaré encantado de saber
+				de ti!
+			</p>
+
+			<div
+				class="flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl p-10 text-center border border-gray-300"
+			>
+				<p class="text-xl font-medium mb-6">
+					La forma más rápida de hablar conmigo es enviándome un
+					correo directo.
+				</p>
+
+				<a
+					href="mailto:alejantipe@gmail.com?subject=Contacto%20desde%20el%20Porfolio"
+					class="bg-blue-600 text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-blue-700 transition hover:scale-105 flex items-center gap-2"
+				>
+					<EnviarMail class="size-6" />
+					Envíame un correo
+				</a>
+			</div>
+		</SectionContainer>
+	</main>
+</Layout>
