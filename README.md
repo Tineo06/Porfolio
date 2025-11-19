@@ -1,50 +1,37 @@
-# Astro Starter Kit: Basics
+# 🚀 Astro Portfolio | Alejandro Tineo
 
-```sh
-npm create astro@latest -- --template basics
-```
+<p align="center">
+  <img src="https://img.shields.io/badge/Tecnología%20Base-Astro%20v4-FF5D01?style=for-the-badge&logo=astro&logoColor=white" alt="Built with Astro" />
+  <img src="https://img.shields.io/badge/Estilo-Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Styled with Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Despliegue-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Deployed on Netlify" />
+</p>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## 👋 Sobre el Proyecto
 
-Inside of your Astro project, you'll see the following folders and files:
+Este es mi **Portafolio Personal y Profesional**, desarrollado con el *framework* **Astro** para asegurar la máxima velocidad, rendimiento y optimización SEO.
+
+El objetivo es mostrar mis habilidades como desarrollador web y presentar mis proyectos más relevantes.
+
+### ✨ Características Clave
+
+* **Rendimiento Extremo:** Carga instantánea gracias a la arquitectura de Astro (Zero JS by default).
+* **Diseño Responsivo:** Visualización perfecta en cualquier dispositivo (Mobile First) con **Tailwind CSS**.
+* **Componentización:** Estructura modular y escalable usando componentes `.astro` y *layouts*.
+
+---
+
+## ⚙️ Estructura del Proyecto
+
+El proyecto sigue la convención de Astro. Aquí está la organización principal:
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+├── public/                  # Archivos estáticos finales (_redirects, favicon)
+├── src/
+│   ├── assets/              # Archivos multimedia usados en componentes
+│   ├── components/          # Bloques de UI reutilizables (Skills Marquee, Header)
+│   ├── layouts/             # Plantillas base de página (Layout.astro)
+│   └── pages/               # Páginas de enrutamiento (.astro)
 └── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# Porfolio
-# Porfolio
-# Porfolio
-# Porfolio
