@@ -26,7 +26,7 @@ El objetivo es mostrar mis habilidades como desarrollador web y presentar mis pr
 
 * Puedes probar la aplicación aquí:
 
-* 👉 [Pagina de criptomonedas](https://porfoliotineo.vercel.app/)
+* 👉 [Página Porfólio ](https://porfoliotineo.vercel.app/)
 
 ---
 
