@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Tecnología%20Base-Astro%20v4-FF5D01?style=for-the-badge&logo=astro&logoColor=white" alt="Built with Astro" />
   <img src="https://img.shields.io/badge/Estilo-Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Styled with Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Despliegue-Netlify-00C7B7?style=for-the-badge&logo=vercel&logoColor=white" alt="Deployed on Vercel" />
+  <img src="https://img.shields.io/badge/Despliegue-Vercel-00C7B7?style=for-the-badge&logo=vercel&logoColor=white" alt="Deployed on Vercel" />
 </p>
 
 ---
