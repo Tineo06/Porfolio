@@ -13,6 +13,7 @@ import Proyectos from "../components/Proyectos.astro";
 import Book from "../components/Book.astro";
 import SobreMi from "../components/SobreMi.astro";
 import EnviarMail from "../components/EnviarMail.astro";
+import fotoPerfil from "../assets/foto-mia.jpeg";
 ---
 
 <Layout
@@ -23,7 +24,7 @@ import EnviarMail from "../components/EnviarMail.astro";
 		<SectionContainer class="py-36 pb-24">
 			<img
 				class="w-24 h-24 rounded-full mb-4"
-				src="/foto-mia.jpeg"
+				src={fotoPerfil.src}
 				alt="Foto de perfil de Alejandro"
 			/>
 
