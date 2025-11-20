@@ -18,14 +18,15 @@ const { description, title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="/porfolio.png" />
+		<link rel="shortcut icon" href="/porfolio.png" type="image/png" />
+		<link rel="icon" href="/porfolio.png" sizes="32x32" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
 		<Header />
 		<slot />
-		<Footer/>
+		<Footer />
 	</body>
 </html>
 
@@ -35,7 +36,8 @@ const { description, title } = Astro.props;
 	}
 
 	html {
-		font-family: "Atkinson Hyperlegible Next Variable", system-ui, sans-serif;
+		font-family: "Atkinson Hyperlegible Next Variable", system-ui,
+			sans-serif;
 		scroll-behavior: smooth;
 	}
 
@@ -45,8 +47,8 @@ const { description, title } = Astro.props;
 		background-color: #000;
 		min-height: 100vh;
 		background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
-        background-color: #000;
-        background-attachment: fixed;
+		background-color: #000;
+		background-attachment: fixed;
 	}
 
 	@media (prefers-reduced-motion: reduce) {
