@@ -26,7 +26,7 @@ El objetivo es mostrar mis habilidades como desarrollador web y presentar mis pr
 
 * Puedes probar la aplicación aquí:
 
-* 👉 [Página Porfólio ](https://porfoliotineo.vercel.app/)
+* 👉 [Página Portfolio ](https://porfoliotineo.vercel.app/)
 
 ---
 
