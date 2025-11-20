@@ -12,6 +12,7 @@
     "@fontsource-variable/atkinson-hyperlegible-next": "^5.2.6",
     "@tailwindcss/vite": "^4.1.17",
     "astro": "^5.15.4",
-    "tailwindcss": "^4.1.17"
+    "tailwindcss": "^4.1.17",
+    "vite": "^7.2.4"
   }
 }
