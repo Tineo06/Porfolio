@@ -22,6 +22,14 @@ El objetivo es mostrar mis habilidades como desarrollador web y presentar mis pr
 
 ---
 
+## 🧪 Prueba el Proyecto
+
+* Puedes probar la aplicación aquí:
+
+* 👉 [Pagina de criptomonedas](https://porfoliotineo.vercel.app/)
+
+---
+
 ## ⚙️ Estructura del Proyecto
 
 El proyecto sigue la convención de Astro. Aquí está la organización principal:
