@@ -5,6 +5,7 @@ import Tailwind from "../components/Tailwind.astro";
 import SocialPill from "../components/SocialPill.astro";
 import GitHub from "../components/GitHub.astro";
 import IconoAstro from "../components/IconoAstro.astro";
+import CSS from "../components/Css.astro";
 const TAGS = {
     HTML: {
         nombre: "HTML",
@@ -21,6 +22,16 @@ const TAGS = {
         nombre: "JavaScript",
         class: "bg-[#eddc68] text-black",
         icon: JS,
+    },
+    IconoAstro: {
+        nombre: "Astro",
+        class: "bg-[#ff5d01] text-white",
+        icon: IconoAstro,
+    },
+    CSS: {
+        nombre: "CSS",
+        class: "bg-blue-600 text-white",
+        icon: CSS,
     },
 };
 
@@ -40,6 +51,13 @@ const PROYECTOS = [
         github: "https://github.com/Tineo06/Crypto",
         tags: [TAGS.HTML, TAGS.JAVASCRIPT, TAGS.TAILWIND],
     },
+    {
+        title: "Csmos",
+        descripcion:
+            "Sitio web para aprender sobre el universo, con artículos, imágenes y datos interesantes sobre planetas, estrellas y galaxias.",
+        github: "https://github.com/Tineo06/Cosmos",
+        tags: [TAGS.IconoAstro, TAGS.JAVASCRIPT, TAGS.CSS],
+    }
 ];
 ---
 
